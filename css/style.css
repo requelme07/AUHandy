@@ -1,3 +1,8 @@
+html, body{
+    width:100%; 
+    height:100%; 
+    overflow-x:hidden;
+}
 body {
     margin: 0;
     font-family: 'Lato', sans-serif;
@@ -259,6 +264,11 @@ h1, h2, h3, h4, h5, h6, p{
     margin-right: 15px;
     display: flex;
     align-items: center;
+    justify-content: center;
+}
+.choice_item_img img {
+    width: 35px;
+    height: 35px;
 }
 .choice_item_title {
     font-size: 18px;
@@ -309,8 +319,8 @@ h1, h2, h3, h4, h5, h6, p{
     justify-content: space-between;
 }
 .services_item {
-    max-width: 270px;
-    max-height: 270px;
+    width: 24%;
+    height: auto;
     padding: 50px 20px;
     border: 4px solid var(--blue);
     transition: .2s linear;
@@ -539,6 +549,7 @@ h1, h2, h3, h4, h5, h6, p{
 .contacts_container {
     display: flex;
     justify-content: space-between;
+    white-space: nowrap;
 }
 .contacts_title {
     font-size: 18px;
@@ -645,3 +656,4 @@ h1, h2, h3, h4, h5, h6, p{
     color: var(--orange);
     margin: 0 3px;
 }
+
