@@ -465,6 +465,9 @@ h1, h2, h3, h4, h5, h6, p{
     padding: 80px 0;
     position: relative;
 }
+.registration_form {
+    position: relative;
+}
 .registration_container {
     display: flex;
     justify-content: space-between;
@@ -520,16 +523,16 @@ h1, h2, h3, h4, h5, h6, p{
     line-height: 22px;
 }
 .spanName {
-    top: 26%;
+    top: 380px;
 }
 .spanMail {
-    top: 32%;
+    top: 410px;
 }
 .spanPhone {
-    top: 38%;
+    top: 440px;
 }
 .spanPass {
-    top: 44%;
+    top: 470px;
     white-space: normal;
 }
 .form_field input {

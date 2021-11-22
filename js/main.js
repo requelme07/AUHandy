@@ -32,7 +32,7 @@ let spanPhone = form.querySelector('.spanPhone')
 let spanPass = form.querySelector('.spanPass')
 let spanMess = form.querySelector('.spanMess')
 
-let regPhone = /^((\+7|7|8)+([0-9]){10})$/;
+let regPhone = /[0-9 -()+]+$/;
 let regMail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 let regMessage = /[A-Za-zA-Яа-яЁё]/;
 let regPass = /(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z!@#$%^&*]{6,}/g;
@@ -41,7 +41,7 @@ let regPass = /(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z!@#$%^&*]{6,}/g;
 btn.onclick = function(event) {
     event.preventDefault();
     if(!validate(regMessage, name.value)) {
-        notValid(name, spanName, "Введите имя")
+        notValid(name, spanName, "Введите имя(только буквы)")
     } else {
         valid(name, spanName, "")
     }
